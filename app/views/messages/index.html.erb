@@ -40,6 +40,13 @@
 
 <% if @message.errors.present? %>
 
+  名前:
+  <%= f.text_field :name, class: "form-control" %>
+
+  内容:
+  <%= f.text_area :body, class: "form-control", size: "10x5" %>
+  <%= f.submit class: "btn btn-sm btn-primary" %>
+
     <div class="alert alert-danger">
       
 <%= alert %>
